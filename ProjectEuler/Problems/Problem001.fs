@@ -1,5 +1,5 @@
 ﻿// Problem 1: Multiples of 3 or 5
-module Problems.Problem001
+module ProjectEuler.Problems.Problem001
 
 let solve() =
   seq { 1..999 }

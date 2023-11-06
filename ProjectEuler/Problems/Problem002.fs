@@ -1,5 +1,5 @@
 ﻿// Problem 2: Even Fibonacci Numbers
-module Problems.Problem002
+module ProjectEuler.Problems.Problem002
 
 let private evenFibonacciNumbers max =
   let rec loop numbers previous current =

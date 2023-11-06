@@ -1,5 +1,5 @@
 ﻿// Problem 3: Largest Prime Factor
-module Problems.Problem003
+module ProjectEuler.Problems.Problem003
 
 let private primeFactors number =
   let rec loop factors number nextOddNumber =
