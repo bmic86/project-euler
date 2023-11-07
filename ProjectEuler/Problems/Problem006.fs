@@ -1,11 +1,11 @@
 ﻿// Problem 6: Sum Square Difference
 module ProjectEuler.Problems.Problem006
 
-let squareOfSum numbers =
+let private squareOfSum numbers =
   let sum = Seq.sum numbers
   sum * sum
 
-let sumOfSquares numbers =
+let private sumOfSquares numbers =
   numbers |> Seq.sumBy (fun num -> num * num)
 
 let solve() =

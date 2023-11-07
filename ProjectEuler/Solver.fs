@@ -10,6 +10,7 @@ let private problems = [
   4, "Largest Palindrome Product", Problem004.solve
   5, "Smallest Multiple", Problem005.solve
   6, "Sum Square Difference", Problem006.solve
+  7, "10001st Prime", Problem007.solve
 ]
 
 let private calculateResult (number, title, solve) =
@@ -18,7 +19,7 @@ let private calculateResult (number, title, solve) =
   stopWatch.Stop()
 
   printf "Problem %03d: %-28s | " number title
-  printfn "Result: %10d | Time: %3dms" result stopWatch.ElapsedMilliseconds
+  printfn "Result: %10d | Time: %5dms" result stopWatch.ElapsedMilliseconds
 
 let solveAll () =
   List.iter calculateResult problems

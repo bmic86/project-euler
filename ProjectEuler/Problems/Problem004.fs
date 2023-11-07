@@ -2,13 +2,13 @@
 module ProjectEuler.Problems.Problem004
 
 let private isPalindrom (text: string) =
-  let rec loop i max (text: string) =
+  let rec loop i max =
     match i with
     | i when i = max -> true
     | i when text[i] <> text[text.Length - (i + 1)] -> false
-    | _ -> loop (i + 1) max text
+    | i -> loop (i + 1) max
 
-  loop 0 (text.Length / 2) text
+  loop 0 (text.Length / 2)
 
 let palindromProducts max =
   let rec loop acc a b =
