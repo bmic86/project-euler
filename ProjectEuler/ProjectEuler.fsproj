@@ -6,9 +6,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="Problems\Common\PrimeNumbers.fs" />
     <Compile Include="Problems\Problem001.fs" />
     <Compile Include="Problems\Problem002.fs" />
     <Compile Include="Problems\Problem003.fs" />
+    <Compile Include="Problems\Problem004.fs" />
+    <Compile Include="Problems\Problem005.fs" />
+    <Compile Include="Problems\Problem006.fs" />
     <Compile Include="Solver.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
