@@ -24,3 +24,6 @@ let private calculateResult (number, title, solve) =
 let solveAll () =
   List.iter calculateResult problems
 
+let solveLast () =
+  calculateResult (List.last problems)
+
