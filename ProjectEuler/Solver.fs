@@ -12,6 +12,7 @@ let private problems = [
   6, "Sum Square Difference", Problem006.solve
   7, "10001st Prime", Problem007.solve
   8, "Largest Product in a Series", Problem008.solve
+  9, "Special Pythagorean Triplet", Problem009.solve
 ]
 
 let private calculateResult (number, title, solve) =
