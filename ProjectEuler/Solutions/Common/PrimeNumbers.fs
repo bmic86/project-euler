@@ -1,4 +1,4 @@
-﻿module ProjectEuler.Problems.Common.PrimeNumbers
+﻿module ProjectEuler.Solutions.Common.PrimeNumbers
 
 let primeFactors number =
   let rec loop factors number nextOddNumber =

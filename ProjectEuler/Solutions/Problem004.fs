@@ -1,5 +1,5 @@
 ﻿// Problem 4: Largest Palindrome Product
-module ProjectEuler.Problems.Problem004
+module ProjectEuler.Solutions.Problem004
 
 let private isPalindrom (text: string) =
   let rec loop i max =
@@ -28,3 +28,4 @@ let palindromProducts max =
 let solve () =
   palindromProducts 999
   |> List.max
+  |> int64

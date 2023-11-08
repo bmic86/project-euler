@@ -1,7 +1,7 @@
 ﻿module ProjectEuler.Solver
 
 open System.Diagnostics
-open ProjectEuler.Problems
+open ProjectEuler.Solutions
 
 let private problems = [
   1, "Multiples of 3 or 5", Problem001.solve
@@ -11,6 +11,7 @@ let private problems = [
   5, "Smallest Multiple", Problem005.solve
   6, "Sum Square Difference", Problem006.solve
   7, "10001st Prime", Problem007.solve
+  8, "Largest Product in a Series", Problem008.solve
 ]
 
 let private calculateResult (number, title, solve) =
@@ -19,7 +20,7 @@ let private calculateResult (number, title, solve) =
   stopWatch.Stop()
 
   printf "Problem %03d: %-28s | " number title
-  printfn "Result: %10d | Time: %5dms" result stopWatch.ElapsedMilliseconds
+  printfn "Result: %15d | Time: %5dms" result stopWatch.ElapsedMilliseconds
 
 let solveAll () =
   List.iter calculateResult problems

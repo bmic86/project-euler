@@ -1,5 +1,5 @@
 ﻿// Problem 6: Sum Square Difference
-module ProjectEuler.Problems.Problem006
+module ProjectEuler.Solutions.Problem006
 
 let private squareOfSum numbers =
   let sum = Seq.sum numbers
@@ -10,4 +10,6 @@ let private sumOfSquares numbers =
 
 let solve() =
   let numbers = seq { 1..100 }
+
   (squareOfSum numbers) - (sumOfSquares numbers)
+  |> int64
