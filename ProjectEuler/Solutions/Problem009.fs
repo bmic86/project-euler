@@ -1,6 +1,7 @@
-﻿// Problem 9: Special Pythagorean Triplet
+﻿// Problem 9: Special Pythagorean Triplet.
 module ProjectEuler.Solutions.Problem009
 
+// Generates Pythagorean triplet using Euclid's formula.
 let private triplet m n =
     let a = m * m - n * n
     let b = 2L * m * n
@@ -15,7 +16,7 @@ let private findTripletBySum sum =
         | (a, b, c) when a + b + c = sum -> (a, b, c)
         | _ ->
             match (m, n) with
-            | (0L, 0L) -> (0L, 0L, 0L) // Triplet not found
+            | (0L, 0L) -> (0L, 0L, 0L) // Triplet not found.
             | (_, 0L) -> loop (m - 1L) max
             | _ -> loop m (n - 1L)
 

@@ -1,4 +1,4 @@
-﻿// Problem 5: Smallest Multiple
+﻿// Problem 5: Smallest Multiple.
 module ProjectEuler.Solutions.Problem005
 
 open ProjectEuler.Solutions.Common.PrimeNumbers

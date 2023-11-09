@@ -1,4 +1,4 @@
-﻿// Problem 2: Even Fibonacci Numbers
+﻿// Problem 2: Even Fibonacci Numbers.
 module ProjectEuler.Solutions.Problem002
 
 let private evenFibonacciNumbers max =

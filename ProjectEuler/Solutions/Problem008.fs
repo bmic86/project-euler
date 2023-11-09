@@ -1,4 +1,4 @@
-﻿// Problem 8: Largest Product in a Series
+﻿// Problem 8: Largest Product in a Series.
 module ProjectEuler.Solutions.Problem008
 
 open System.IO

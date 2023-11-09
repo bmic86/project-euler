@@ -1,4 +1,4 @@
-﻿// Problem 6: Sum Square Difference
+﻿// Problem 6: Sum Square Difference.
 module ProjectEuler.Solutions.Problem006
 
 let private squareOfSum numbers =

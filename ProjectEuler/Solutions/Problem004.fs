@@ -1,4 +1,4 @@
-﻿// Problem 4: Largest Palindrome Product
+﻿// Problem 4: Largest Palindrome Product.
 module ProjectEuler.Solutions.Problem004
 
 let private isPalindrom (text: string) =

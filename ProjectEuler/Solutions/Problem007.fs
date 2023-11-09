@@ -1,4 +1,4 @@
-﻿// Problem 7: 10001st Prime
+﻿// Problem 7: 10001st Prime.
 module ProjectEuler.Solutions.Problem007
 
 let private isPrime number =

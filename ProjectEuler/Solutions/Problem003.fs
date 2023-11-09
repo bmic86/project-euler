@@ -1,4 +1,4 @@
-﻿// Problem 3: Largest Prime Factor
+﻿// Problem 3: Largest Prime Factor.
 module ProjectEuler.Solutions.Problem003
 
 open ProjectEuler.Solutions.Common.PrimeNumbers
