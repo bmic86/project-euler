@@ -2,14 +2,13 @@
 module ProjectEuler.Solutions.Problem006
 
 let private squareOfSum numbers =
-  let sum = Seq.sum numbers
-  sum * sum
+    let sum = Seq.sum numbers
+    sum * sum
 
 let private sumOfSquares numbers =
-  numbers |> Seq.sumBy (fun num -> num * num)
+    numbers |> Seq.sumBy (fun num -> num * num)
 
-let solve() =
-  let numbers = seq { 1..100 }
+let solve () =
+    let numbers = seq { 1..100 }
 
-  (squareOfSum numbers) - (sumOfSquares numbers)
-  |> int64
+    (squareOfSum numbers) - (sumOfSquares numbers) |> int64

@@ -2,7 +2,8 @@
 
 [<EntryPoint>]
 let main argv =
-  match argv with
-  | [| "all" |] -> Solver.solveAll()
-  | _ -> Solver.solveLast()
-  0
+    match argv with
+    | [| "all" |] -> Solver.solveAll ()
+    | _ -> Solver.solveLast ()
+
+    0
