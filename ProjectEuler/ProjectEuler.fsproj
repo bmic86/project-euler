@@ -12,6 +12,9 @@
     <Content Include="Data\Problem011.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Data\Problem013.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Compile Include="Solutions\Common\PrimeNumbers.fs" />
     <Compile Include="Solutions\Problem001.fs" />
     <Compile Include="Solutions\Problem002.fs" />
@@ -25,6 +28,7 @@
     <Compile Include="Solutions\Problem010.fs" />
     <Compile Include="Solutions\Problem011.fs" />
     <Compile Include="Solutions\Problem012.fs" />
+    <Compile Include="Solutions\Problem013.fs" />
     <Compile Include="Solver.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
