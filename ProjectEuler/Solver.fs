@@ -14,14 +14,15 @@ let private problems =
       8, "Largest Product in a Series", Problem008.solve
       9, "Special Pythagorean Triplet", Problem009.solve
       10, "Summation of Primes", Problem010.solve
-      11, "Largest Product in a Grid", Problem011.solve ]
+      11, "Largest Product in a Grid", Problem011.solve
+      12, "Highly Divisible Triangular Number", Problem012.solve ]
 
 let private calculateResult (number, title, solve) =
     let stopWatch = Stopwatch.StartNew()
     let result = solve ()
     stopWatch.Stop()
 
-    printf "Problem %03d: %-28s | " number title
+    printf "Problem %03d: %-35s | " number title
     printfn "Result: %15d | Time: %5dms" result stopWatch.ElapsedMilliseconds
 
 let solveAll () = List.iter calculateResult problems

@@ -1,4 +1,5 @@
-﻿module ProjectEuler.Solutions.Problem011
+﻿// Problem 11: Largest Product in a Grid.
+module ProjectEuler.Solutions.Problem011
 
 open System
 open System.IO
