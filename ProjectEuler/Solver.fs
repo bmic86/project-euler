@@ -1,5 +1,6 @@
 ﻿module ProjectEuler.Solver
 
+open System
 open System.Diagnostics
 open ProjectEuler.Solutions
 
@@ -26,6 +27,21 @@ let private calculateResult (number, title, solve) =
     printf "Problem %03d: %-35s | " number title
     printfn "Result: %15d | Time: %5dms" result stopWatch.ElapsedMilliseconds
 
-let solveAll () = List.iter calculateResult problems
+    stopWatch.Elapsed
 
-let solveLast () = calculateResult (List.last problems)
+let solveAll () =
+    printfn "Solving all problems:"
+    printfn "---------------------"
+
+    let totalTime =
+        problems
+        |> List.fold (fun timeSum problem -> timeSum + (calculateResult problem)) TimeSpan.Zero
+
+    printfn "----------------------------"
+    printfn "Total time: %A" totalTime
+
+let solveLast () =
+    printfn "Solving last problem:"
+    printfn "---------------------"
+
+    calculateResult (List.last problems) |> ignore
