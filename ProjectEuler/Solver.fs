@@ -17,7 +17,8 @@ let private problems =
       10, "Summation of Primes", Problem010.solve
       11, "Largest Product in a Grid", Problem011.solve
       12, "Highly Divisible Triangular Number", Problem012.solve
-      13, "Large Sum", Problem013.solve ]
+      13, "Large Sum", Problem013.solve
+      14, "Longest Collatz Sequence", Problem014.solve ]
 
 let private calculateResult (number, title, solve) =
     let stopWatch = Stopwatch.StartNew()
