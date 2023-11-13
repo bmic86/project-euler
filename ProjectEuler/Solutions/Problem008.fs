@@ -2,11 +2,12 @@
 module ProjectEuler.Solutions.Problem008
 
 open System.IO
+open ProjectEuler.Solutions.Common.Numbers
 
 let private productsInSeries numOfDigits (series: string) =
     let calculateProduct firstIndex lastIndex =
         series[firstIndex..lastIndex].ToCharArray()
-        |> Array.fold (fun acc digit -> acc * ((int64 digit) - (int64 '0'))) 1L
+        |> Array.fold (fun acc digit -> acc * (charDigitToNumber digit)) 1L
 
     let rec loop products firstIndex =
         match firstIndex + numOfDigits - 1 with

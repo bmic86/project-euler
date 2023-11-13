@@ -3,7 +3,7 @@ module ProjectEuler.Solutions.Problem019
 
 open System
 
-let countSundaysOnFirstMonthDay startYear endYear =
+let private countSundaysOnFirstMonthDay startYear endYear =
     let endDate = DateTime(endYear, 12, 31)
 
     let rec loop counter date =
