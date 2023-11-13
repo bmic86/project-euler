@@ -20,7 +20,8 @@ let private problems =
       13, "Large Sum", Problem013.solve
       14, "Longest Collatz Sequence", Problem014.solve
       15, "Lattice Paths", Problem015.solve
-      16, "Power Digit Sum", Problem016.solve ]
+      16, "Power Digit Sum", Problem016.solve
+      17, "Number Letter Counts", Problem017.solve ]
 
 let private calculateResult (number, title, solve) =
     let stopWatch = Stopwatch.StartNew()
