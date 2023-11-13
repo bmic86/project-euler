@@ -33,6 +33,7 @@
     <Compile Include="Solutions\Problem015.fs" />
     <Compile Include="Solutions\Problem016.fs" />
     <Compile Include="Solutions\Problem017.fs" />
+    <Compile Include="Solutions\Problem019.fs" />
     <Compile Include="Solver.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
