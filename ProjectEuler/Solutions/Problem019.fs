@@ -7,12 +7,10 @@ let countSundaysOnFirstMonthDay startYear endYear =
     let endDate = DateTime(endYear, 12, 31)
 
     let rec loop counter date =
-        match date > endDate with
-        | true -> counter
-        | false ->
-            match date.DayOfWeek with
-            | DayOfWeek.Sunday -> loop (counter + 1) (date.AddMonths(1))
-            | _ -> loop counter (date.AddMonths(1))
+        match date > endDate, date.DayOfWeek with
+        | true, _ -> counter
+        | false, DayOfWeek.Sunday -> loop (counter + 1) (date.AddMonths(1))
+        | false, _ -> loop counter (date.AddMonths(1))
 
     loop 0 (DateTime(startYear, 1, 1))
 
