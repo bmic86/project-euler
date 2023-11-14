@@ -1,21 +1,12 @@
 ﻿// Problem 11: Largest Product in a Grid.
 module ProjectEuler.Solutions.Problem011
 
-open System
-open System.IO
+open ProjectEuler.Solutions.Common.FileInput
 
 type private Vector2 = { X: int; Y: int }
 
 let private gridSize = 20
 let private adjacentNumbersCount = 4
-
-let private loadDataGrid () =
-    let parseLine (line: string) =
-        let splited = line.Split(' ', StringSplitOptions.RemoveEmptyEntries)
-        Array.map Int32.Parse splited
-
-    let lines = File.ReadAllLines("./Data/Problem011.txt")
-    Array.map parseLine lines
 
 let private position coords direction step =
     { X = coords.X + direction.X * step
@@ -66,4 +57,4 @@ let private gridProducts (grid: int array array) =
     loop [] 0 0
 
 let solve () =
-    loadDataGrid () |> gridProducts |> List.max
+    readAllLinesAsIntegers ("Problem011.txt") |> gridProducts |> List.max

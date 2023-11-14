@@ -22,8 +22,10 @@ let private problems =
       15, ("Lattice Paths", Problem015.solve)
       16, ("Power Digit Sum", Problem016.solve)
       17, ("Number Letter Counts", Problem017.solve)
+      18, ("Maximum Path Sum I", Problem018.solve)
       19, ("Counting Sundays", Problem019.solve)
-      20, ("Factorial Digit Sum", Problem020.solve) ]
+      20, ("Factorial Digit Sum", Problem020.solve)
+      67, ("Maximum Path Sum II", Problem067.solve) ]
     |> Map.ofList
 
 let private calculateResult problemNumber (title, solve) =
