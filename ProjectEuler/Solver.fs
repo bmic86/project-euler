@@ -25,6 +25,8 @@ let private problems =
       18, ("Maximum Path Sum I", Problem018.solve)
       19, ("Counting Sundays", Problem019.solve)
       20, ("Factorial Digit Sum", Problem020.solve)
+      21, ("Amicable Numbers", Problem021.solve)
+      22, ("Names Scores", Problem022.solve)
       67, ("Maximum Path Sum II", Problem067.solve) ]
     |> Map.ofList
 

@@ -25,27 +25,25 @@ let private generateTree (input: int array array) =
 
     loop [] [] (Array.length input - 1) 0
 
-let private maxValuesPathSum nodes =
+let private updateChildPathSum (maxSums: int array) node child =
+    let newSum = maxSums[node.Id] + child.Value
+    maxSums[child.Id] <- max newSum maxSums[child.Id]
+
+let private maxPathSum nodes =
     let nodesCount = List.length nodes
-    let distances = Array.zeroCreate nodesCount
+    let nodeMaxSums = Array.zeroCreate nodesCount
 
     let rec loop unvisited =
-
         match unvisited with
-        | [] -> Array.max distances
+        | [] -> Array.max nodeMaxSums
         | node :: rest ->
             match node.Children with
             | [] -> loop rest
             | children ->
-                distances[node.Id] <- max node.Value distances[node.Id]
-
-                for child in children do
-                    let newChildDistance = distances[node.Id] + child.Value
-                    distances[child.Id] <- max newChildDistance distances[child.Id]
-
+                nodeMaxSums[node.Id] <- max node.Value nodeMaxSums[node.Id]
+                List.iter (fun child -> updateChildPathSum nodeMaxSums node child) children
                 loop rest
 
     loop nodes
 
-let maximumPathSum (input: int array array) =
-    input |> generateTree |> maxValuesPathSum
+let maximumPathSum (input: int array array) = input |> generateTree |> maxPathSum
