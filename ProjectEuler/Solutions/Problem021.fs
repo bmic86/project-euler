@@ -1,16 +1,7 @@
 ﻿// Problem 21: Amicable Numbers
 module ProjectEuler.Solutions.Problem021
 
-let private sumDivisors number =
-    let rec loop sum current =
-        match current, number % current = 0 with
-        | 1, _ -> sum
-        | _, true -> loop (sum + current) (current - 1)
-        | _, false -> loop sum (current - 1)
-
-    match (number / 2) with
-    | 0 -> 0
-    | startNumber -> loop 1 startNumber
+open ProjectEuler.Solutions.Common.Numbers
 
 let private isAmicable number =
     let a = sumDivisors number
