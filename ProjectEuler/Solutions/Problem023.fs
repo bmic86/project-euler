@@ -16,4 +16,4 @@ let solve () =
 
     let abundantSums = List.fold combineSums [] abundantNumbers
 
-    List.except abundantSums allNumbers |> List.sum |> int64
+    List.except abundantSums allNumbers |> List.sum |> string

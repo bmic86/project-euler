@@ -17,4 +17,4 @@ let private nameScore index (name: string) =
 let private allNameScores names = Array.mapi nameScore names
 
 let solve () =
-    loadNamesFromFile () |> Array.sort |> allNameScores |> Array.sum |> int64
+    loadNamesFromFile () |> Array.sort |> allNameScores |> Array.sum |> string

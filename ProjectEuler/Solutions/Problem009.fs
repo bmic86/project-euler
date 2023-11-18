@@ -24,4 +24,4 @@ let private findTripletBySum sum =
 
 let solve () =
     let (a, b, c) = findTripletBySum 1000
-    a * b * c
+    a * b * c |> string

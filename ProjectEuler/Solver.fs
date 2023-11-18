@@ -28,6 +28,7 @@ let private problems =
       21, ("Amicable Numbers", Problem021.solve)
       22, ("Names Scores", Problem022.solve)
       23, ("Non-Abundant Sums", Problem023.solve)
+      24, ("Lexicographic Permutations", Problem024.solve)
       67, ("Maximum Path Sum II", Problem067.solve) ]
     |> Map.ofList
 
@@ -37,7 +38,7 @@ let private calculateResult problemNumber (title, solve) =
     stopWatch.Stop()
 
     printf "Problem %03d: %-35s | " problemNumber title
-    printfn "Result: %15d | Time: %5dms" result stopWatch.ElapsedMilliseconds
+    printfn "Result: %15s | Time: %5dms" result stopWatch.ElapsedMilliseconds
 
     stopWatch.Elapsed
 

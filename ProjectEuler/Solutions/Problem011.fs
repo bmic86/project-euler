@@ -57,4 +57,4 @@ let private gridProducts (grid: int array array) =
     loop [] 0 0
 
 let solve () =
-    readAllLinesAsIntegers ("Problem011.txt") |> gridProducts |> List.max
+    readAllLinesAsIntegers ("Problem011.txt") |> gridProducts |> List.max |> string

@@ -11,4 +11,4 @@ let private sumOfSquares numbers =
 let solve () =
     let numbers = seq { 1..100 }
 
-    (squareOfSum numbers) - (sumOfSquares numbers) |> int64
+    (squareOfSum numbers) - (sumOfSquares numbers) |> string

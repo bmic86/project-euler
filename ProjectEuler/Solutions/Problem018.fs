@@ -5,4 +5,4 @@ open ProjectEuler.Solutions.Common.FileInput
 open ProjectEuler.Solutions.Common.MaximumPathSum
 
 let solve () =
-    readAllLinesAsIntegers ("Problem018.txt") |> maximumPathSum |> int64
+    readAllLinesAsIntegers ("Problem018.txt") |> maximumPathSum |> string

@@ -19,4 +19,4 @@ let private triangleNumberWithDivisorsOver limit =
     loop 0 1
 
 let solve () =
-    triangleNumberWithDivisorsOver 500 |> int64
+    triangleNumberWithDivisorsOver 500 |> string

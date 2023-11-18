@@ -22,4 +22,4 @@ let private allAmicableNumbers limit =
     loop [] (limit - 1)
 
 let solve () =
-    allAmicableNumbers 10000 |> List.sum |> int64
+    allAmicableNumbers 10000 |> List.sum |> string

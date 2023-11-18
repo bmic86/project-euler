@@ -16,4 +16,5 @@ let private allPrimes limit =
     | limit when limit <= 2 -> []
     | _ -> loop [ 3L .. 2L .. int64 (limit - 1) ] 3
 
-let solve () = allPrimes 2_000_000 |> List.sum
+let solve () =
+    allPrimes 2_000_000 |> List.sum |> string

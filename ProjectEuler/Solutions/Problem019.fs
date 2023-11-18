@@ -15,4 +15,4 @@ let private countSundaysOnFirstDayOfMonth startYear endYear =
     loop 0 (DateTime(startYear, 1, 1))
 
 let solve () =
-    countSundaysOnFirstDayOfMonth 1901 2000 |> int64
+    countSundaysOnFirstDayOfMonth 1901 2000 |> string

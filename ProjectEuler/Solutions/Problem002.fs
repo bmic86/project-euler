@@ -11,4 +11,4 @@ let private evenFibonacciNumbers max =
     loop [] 1 1
 
 let solve () =
-    evenFibonacciNumbers 4_000_000 |> List.sum |> int64
+    evenFibonacciNumbers 4_000_000 |> List.sum |> string

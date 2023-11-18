@@ -22,4 +22,4 @@ let private primeByIndex index =
 
     loop 0 -1 0
 
-let solve () = primeByIndex 10001 |> int64
+let solve () = primeByIndex 10001 |> string

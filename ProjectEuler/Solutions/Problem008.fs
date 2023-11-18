@@ -19,4 +19,7 @@ let private productsInSeries numOfDigits (series: string) =
     loop [] 0
 
 let solve () =
-    File.ReadAllText("./Data/Problem008.txt") |> productsInSeries 13 |> List.max
+    File.ReadAllText("./Data/Problem008.txt")
+    |> productsInSeries 13
+    |> List.max
+    |> string

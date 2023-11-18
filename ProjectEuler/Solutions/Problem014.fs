@@ -25,4 +25,4 @@ let private longestCollatzSequenceStartNumber limit =
     loop 0 0 (limit - 1)
 
 let solve () =
-    longestCollatzSequenceStartNumber 1_000_000 |> int64
+    longestCollatzSequenceStartNumber 1_000_000 |> string

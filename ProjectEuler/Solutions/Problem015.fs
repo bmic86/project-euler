@@ -11,4 +11,4 @@ let private countLatticePaths n =
 
     int64 (a / b)
 
-let solve () = countLatticePaths 20
+let solve () = countLatticePaths 20 |> string

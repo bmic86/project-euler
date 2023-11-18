@@ -27,4 +27,4 @@ let palindromProducts max =
     loop [] max max
 
 let solve () =
-    palindromProducts 999 |> List.max |> int64
+    palindromProducts 999 |> List.max |> string

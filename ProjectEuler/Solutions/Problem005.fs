@@ -31,4 +31,4 @@ let private smallestMultiple maxNumber =
 
     result
 
-let solve () = smallestMultiple 20 |> int64
+let solve () = smallestMultiple 20 |> string

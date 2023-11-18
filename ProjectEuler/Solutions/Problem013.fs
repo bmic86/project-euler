@@ -9,4 +9,4 @@ let private loadData () =
     File.ReadAllLines("./Data/Problem013.txt") |> Array.map bigint.Parse
 
 let solve () =
-    loadData () |> Array.sum |> string |> sliceTo 9 |> int64
+    loadData () |> Array.sum |> string |> sliceTo 9 |> string

@@ -5,4 +5,4 @@ let solve () =
     seq { 1..999 }
     |> Seq.where (fun num -> (num % 3 = 0) || (num % 5 = 0))
     |> Seq.sum
-    |> int64
+    |> string

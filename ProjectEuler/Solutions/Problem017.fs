@@ -63,4 +63,4 @@ let private numberToText number =
     | _ -> ""
 
 let solve () =
-    { 1..1000 } |> Seq.sumBy (fun i -> String.length (numberToText i)) |> int64
+    { 1..1000 } |> Seq.sumBy (fun i -> String.length (numberToText i)) |> string
