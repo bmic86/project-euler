@@ -30,6 +30,7 @@ let private problems =
       23, ("Non-Abundant Sums", Problem023.solve)
       24, ("Lexicographic Permutations", Problem024.solve)
       25, ("1000-digit Fibonacci Number", Problem025.solve)
+      26, ("Reciprocal Cycles", Problem026.solve)
       67, ("Maximum Path Sum II", Problem067.solve) ]
     |> Map.ofList
 
