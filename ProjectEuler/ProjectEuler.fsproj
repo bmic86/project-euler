@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net7.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
@@ -56,6 +56,7 @@
     <Compile Include="Solutions\Problem025.fs" />
     <Compile Include="Solutions\Problem026.fs" />
     <Compile Include="Solutions\Problem027.fs" />
+    <Compile Include="Solutions\Problem028.fs" />
     <Compile Include="Solutions\Problem067.fs" />
     <Compile Include="Solver.fs" />
     <Compile Include="Program.fs" />
