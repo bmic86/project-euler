@@ -1,15 +1,7 @@
 ﻿// Problem 7: 10001st Prime.
 module ProjectEuler.Solutions.Problem007
 
-let private isPrime number =
-    let rec loop i =
-        match i with
-        | 0
-        | 1 -> true
-        | i when number % i = 0 -> false
-        | i -> loop (i - 1)
-
-    loop (number - 1)
+open ProjectEuler.Solutions.Common.PrimeNumbers
 
 let private primeByIndex index =
     let rec loop prime i currentNumber =

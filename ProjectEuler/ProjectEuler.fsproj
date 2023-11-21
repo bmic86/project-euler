@@ -55,6 +55,7 @@
     <Compile Include="Solutions\Problem024.fs" />
     <Compile Include="Solutions\Problem025.fs" />
     <Compile Include="Solutions\Problem026.fs" />
+    <Compile Include="Solutions\Problem027.fs" />
     <Compile Include="Solutions\Problem067.fs" />
     <Compile Include="Solver.fs" />
     <Compile Include="Program.fs" />
