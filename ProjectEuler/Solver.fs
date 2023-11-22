@@ -33,6 +33,7 @@ let private problems =
       26, ("Reciprocal Cycles", Problem026.solve)
       27, ("Quadratic Primes", Problem027.solve)
       28, ("Number Spiral Diagonals", Problem028.solve)
+      29, ("Distinct Powers", Problem029.solve)
       67, ("Maximum Path Sum II", Problem067.solve) ]
     |> Map.ofList
 
