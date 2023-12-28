@@ -13,7 +13,7 @@ let private sumDigitsFifthPowers number =
     loop 0 number
 
 let solve () =
-    { 22..1_000_000 }
+    { 22..200_000 }
     |> Seq.where (fun number -> sumDigitsFifthPowers number = number)
     |> Seq.sum
     |> string
