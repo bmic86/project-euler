@@ -1,10 +1,12 @@
 ﻿module ProjectEuler.Solutions.Common.Numbers
 
-let charDigitToNumber (digit: char) = (int64 digit) - (int64 '0')
+let charDigitToInt32 (digit: char) = (int32 digit) - (int32 '0')
+
+let charDigitToInt64 (digit: char) = (int64 digit) - (int64 '0')
 
 let sumAllDigits (number: bigint) =
     let str = string number
-    str.ToCharArray() |> Array.sumBy charDigitToNumber
+    str.ToCharArray() |> Array.sumBy charDigitToInt64
 
 let sumDivisors number =
     let rec loop sum current =

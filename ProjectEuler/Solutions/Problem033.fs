@@ -9,7 +9,7 @@ let private isCuriousFraction (numerator, denominator) =
     | [| n1; n2 |], [| d1; d2 |] when n2 = d1 && n1 <> d2 ->
 
         let fract1 = (double numerator) / (double denominator)
-        let fract2 = (double (charDigitToNumber n1)) / (double (charDigitToNumber d2))
+        let fract2 = (double (charDigitToInt32 n1)) / (double (charDigitToInt32 d2))
 
         fract1 = fract2
 

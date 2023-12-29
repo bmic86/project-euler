@@ -38,6 +38,7 @@ let private problems =
       31, ("Coin Sums", Problem031.solve)
       32, ("Pandigital Products", Problem032.solve)
       33, ("Digit Cancelling Fractions", Problem033.solve)
+      34, ("Digit Factorials", Problem034.solve)
       67, ("Maximum Path Sum II", Problem067.solve) ]
     |> Map.ofList
 

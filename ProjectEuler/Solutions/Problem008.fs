@@ -7,7 +7,7 @@ open ProjectEuler.Solutions.Common.Numbers
 let private productsInSeries numOfDigits (series: string) =
     let calculateProduct firstIndex lastIndex =
         series[firstIndex..lastIndex].ToCharArray()
-        |> Array.fold (fun acc digit -> acc * (charDigitToNumber digit)) 1L
+        |> Array.fold (fun acc digit -> acc * (charDigitToInt64 digit)) 1L
 
     let rec loop products firstIndex =
         match firstIndex + numOfDigits - 1 with
