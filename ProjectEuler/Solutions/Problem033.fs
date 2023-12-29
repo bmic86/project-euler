@@ -18,7 +18,7 @@ let private isCuriousFraction (numerator, denominator) =
 let private fractionsProduct fractions =
     Seq.fold (fun (accNum, accDen) (num, den) -> (accNum * num, accDen * den)) (1, 1) fractions
 
-let private lowestDenominator (numerator, denominator) = denominator / numerator
+let private simplifyDenominator (numerator, denominator) = denominator / numerator
 
 let solve () =
 
@@ -32,5 +32,5 @@ let solve () =
     allFractions
     |> Seq.filter isCuriousFraction
     |> fractionsProduct
-    |> lowestDenominator
+    |> simplifyDenominator
     |> string
