@@ -29,6 +29,7 @@
     <Compile Include="Solutions\Common\Factorials.fs" />
     <Compile Include="Solutions\Common\PrimeNumbers.fs" />
     <Compile Include="Solutions\Common\MaximumPathSum.fs" />
+    <Compile Include="Solutions\Common\Palindromes.fs" />
     <Compile Include="Solutions\Problem001.fs" />
     <Compile Include="Solutions\Problem002.fs" />
     <Compile Include="Solutions\Problem003.fs" />
@@ -64,6 +65,7 @@
     <Compile Include="Solutions\Problem033.fs" />
     <Compile Include="Solutions\Problem034.fs" />
     <Compile Include="Solutions\Problem035.fs" />
+    <Compile Include="Solutions\Problem036.fs" />
     <Compile Include="Solutions\Problem067.fs" />
     <Compile Include="Solver.fs" />
     <Compile Include="Program.fs" />

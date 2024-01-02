@@ -1,16 +1,9 @@
 ﻿// Problem 4: Largest Palindrome Product.
 module ProjectEuler.Solutions.Problem004
 
-let private isPalindrom (text: string) =
-    let rec loop i max =
-        match i with
-        | i when i = max -> true
-        | i when text[i] <> text[text.Length - (i + 1)] -> false
-        | i -> loop (i + 1) max
+open ProjectEuler.Solutions.Common.Palindromes
 
-    loop 0 (text.Length / 2)
-
-let palindromProducts max =
+let private palindromProducts max =
     let rec loop acc a b =
         let product = a * b
 
