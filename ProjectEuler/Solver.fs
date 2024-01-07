@@ -41,6 +41,7 @@ let private problems =
       34, ("Digit Factorials", Problem034.solve)
       35, ("Circular Primes", Problem035.solve)
       36, ("Double-base Palindromes", Problem036.solve)
+      37, ("Truncatable Primes", Problem037.solve)
       67, ("Maximum Path Sum II", Problem067.solve) ]
     |> Map.ofList
 
