@@ -1,21 +1,7 @@
 ﻿// Problem 32: Pandigital Products
 module ProjectEuler.Solutions.Problem032
 
-// For number with unique digits: return bitmask representing digits in a number.
-// For number with non-unique digits: return None.
-let private uniqueDigitsMask number =
-    let rec loop result n =
-        match n, n % 10 with
-        | 0, _ -> Some result
-        | n, digit ->
-            let digitMask = 1 <<< digit
-
-            // Checks, if digits in a number are unique.
-            match digitMask &&& result = 0 with
-            | true -> loop (result ||| digitMask) (n / 10)
-            | false -> None
-
-    loop 0 number
+open ProjectEuler.Solutions.Common.Numbers
 
 // If all numbers (a, b and product) combined together are pandigital, then return the product.
 // Otherwise return 0

@@ -18,3 +18,19 @@ let sumDivisors number =
     match (number / 2) with
     | 0 -> 0
     | startNumber -> loop 1 startNumber
+
+// For number with unique digits: return bitmask representing digits in a number.
+// For number with non-unique digits: return None.
+let uniqueDigitsMask number =
+    let rec loop result n =
+        match n, n % 10 with
+        | 0, _ -> Some result
+        | n, digit ->
+            let digitMask = 1 <<< digit
+
+            // Checks, if digits in a number are unique.
+            match digitMask &&& result = 0 with
+            | true -> loop (result ||| digitMask) (n / 10)
+            | false -> None
+
+    loop 0 number
