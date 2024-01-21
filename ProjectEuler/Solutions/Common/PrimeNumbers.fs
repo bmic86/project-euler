@@ -1,5 +1,7 @@
 ﻿module ProjectEuler.Solutions.Common.PrimeNumbers
 
+let private ceilSqrt n = int (ceil (sqrt (float n)))
+
 let primeFactors number =
     let rec loop factors number nextOddNumber =
         match number with
@@ -12,7 +14,7 @@ let primeFactors number =
 
 // Solution based on Sieve of Eratosthenes.
 let allPrimesBelow limit =
-    let sqrtLimit = int (ceil (sqrt (float limit)))
+    let sqrtLimit = ceilSqrt limit
 
     let rec loop acc i =
         match i <= sqrtLimit with
@@ -26,11 +28,14 @@ let allPrimesBelow limit =
     | _ -> loop [ 3..2 .. (limit - 1) ] 3
 
 let isPrime number =
-    let rec loop i =
-        match i with
-        | 0
-        | 1 -> true
-        | i when number % i = 0 -> false
-        | i -> loop (i - 1)
 
-    loop (number - 1)
+    let rec loop i limit =
+        match i with
+        | i when i > limit -> true
+        | i when number % i = 0 -> false
+        | i -> loop (i + 1) limit
+
+    match number with
+    | n when n <= 1 -> false
+    | 2 -> true
+    | _ -> loop 2 (ceilSqrt number)

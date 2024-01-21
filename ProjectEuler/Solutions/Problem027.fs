@@ -3,11 +3,11 @@ module ProjectEuler.Solutions.Problem027
 
 open ProjectEuler.Solutions.Common.PrimeNumbers
 
-let private quadrartic n a b = n * n + a * n + b
+let private quadratic n a b = n * n + a * n + b
 
 let private consecutivePrimesCount a b =
     let rec loop n =
-        match quadrartic n a b with
+        match quadratic n a b with
         | result when result < 0 -> n
         | result ->
             match isPrime result with
