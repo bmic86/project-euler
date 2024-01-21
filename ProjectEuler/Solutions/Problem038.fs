@@ -20,16 +20,11 @@ let private concatenatedProduct number n =
     |> String.concat ""
     |> int
 
-let private isPandigital number =
-    match uniqueDigitsMask number with
-    | Some mask when mask = 0b1111111110 -> true
-    | _ -> false
-
 let private maxPandigitalConcatenatedProduct limit =
     let products =
         limit.Range
         |> Seq.map (fun number -> concatenatedProduct number limit.N)
-        |> Seq.where isPandigital
+        |> Seq.where (fun number -> isPandigital 9 number)
 
     match not (Seq.isEmpty products) with
     | true -> Seq.max products

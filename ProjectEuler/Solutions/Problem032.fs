@@ -18,8 +18,8 @@ let private pandigitalProduct a b =
             let hasUniqueDigits = (maskA &&& maskProduct) = 0 && (maskB &&& maskProduct) = 0
             let allDigitsMask = maskA ||| maskB ||| maskProduct
 
-            match hasUniqueDigits, allDigitsMask with
-            | true, 0b1111111110 -> product
+            match hasUniqueDigits, allDigitsMask = (pandigitalNumberMask 9) with
+            | true, true -> product
             | _ -> 0
 
         | None -> 0

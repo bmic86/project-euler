@@ -34,3 +34,10 @@ let uniqueDigitsMask number =
             | false -> None
 
     loop 0 number
+
+let pandigitalNumberMask digitsCount = (1 <<< (digitsCount + 1)) - 2
+
+let isPandigital digitsCount number =
+    match uniqueDigitsMask number with
+    | Some mask when mask = (pandigitalNumberMask digitsCount) -> true
+    | _ -> false
