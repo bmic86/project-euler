@@ -47,6 +47,7 @@ let private problems =
       40, ("Champernowne's Constant", Problem040.solve)
       41, ("Pandigital Prime", Problem041.solve)
       42, ("Coded Triangle Numbers", Problem042.solve)
+      48, ("Self Powers", Problem048.solve)
       67, ("Maximum Path Sum II", Problem067.solve) ]
     |> Map.ofList
 
