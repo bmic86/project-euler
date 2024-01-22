@@ -10,3 +10,7 @@ let readAllLinesAsIntegers fileName =
 
     let lines = File.ReadAllLines($"./Data/{fileName}")
     Array.map parseLine lines
+
+let readAllWords fileName =
+    let content = File.ReadAllText($"./Data/{fileName}")
+    content.Split([| ','; '"' |], StringSplitOptions.RemoveEmptyEntries)

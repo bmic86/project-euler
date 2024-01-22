@@ -21,6 +21,9 @@
     <Content Include="Data\Problem022.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Data\Problem042.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Data\Problem067.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -30,6 +33,7 @@
     <Compile Include="Solutions\Common\PrimeNumbers.fs" />
     <Compile Include="Solutions\Common\MaximumPathSum.fs" />
     <Compile Include="Solutions\Common\Palindromes.fs" />
+    <Compile Include="Solutions\Common\Text.fs" />
     <Compile Include="Solutions\Problem001.fs" />
     <Compile Include="Solutions\Problem002.fs" />
     <Compile Include="Solutions\Problem003.fs" />
@@ -71,6 +75,7 @@
     <Compile Include="Solutions\Problem039.fs" />
     <Compile Include="Solutions\Problem040.fs" />
     <Compile Include="Solutions\Problem041.fs" />
+    <Compile Include="Solutions\Problem042.fs" />
     <Compile Include="Solutions\Problem067.fs" />
     <Compile Include="Solver.fs" />
     <Compile Include="Program.fs" />

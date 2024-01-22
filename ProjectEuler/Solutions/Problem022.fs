@@ -1,20 +1,18 @@
 ﻿// Problem 22: Names Scores
 module ProjectEuler.Solutions.Problem022
 
-open System
-open System.IO
-
-let private loadNamesFromFile () =
-    let content = File.ReadAllText("./Data/Problem022.txt")
-    content.Split([| ','; '"' |], StringSplitOptions.RemoveEmptyEntries)
+open ProjectEuler.Solutions.Common.FileInput
+open ProjectEuler.Solutions.Common.Text
 
 let private nameScore index (name: string) =
-    let chars = name.ToCharArray()
-    let sum = Array.sumBy (fun c -> int c - int '@') chars // '@' is the first char before 'A'.
-
+    let sum = wordScore name
     (index + 1) * sum
 
 let private allNameScores names = Array.mapi nameScore names
 
 let solve () =
-    loadNamesFromFile () |> Array.sort |> allNameScores |> Array.sum |> string
+    readAllWords "Problem022.txt"
+    |> Array.sort
+    |> allNameScores
+    |> Array.sum
+    |> string
